@@ -31,26 +31,15 @@ Pattern Matching for switch: Enables exhaustive and readable score rendering wit
 Records: Provide concise and immutable data models.
 
 --Package Structure
-
-
 src/main/java
-
-├── domain/  # Game logic
-
+├── domain/                  # Game logic
 │   ├── model                # Score, PointScore, Deuce, etc.
-
 │   ├── port/
-
 │   │   ├── in               # PlayTennisGameUseCase
-
 │   │   └── out              # ScoreOutputPort
-
 │   └── application          # PlayTennisGameService (UseCase implementation)
-
 ├── infra/                   # Adapters
-
 │   └── out                  # ConsoleScoreAdapter.java
-
 └── TennisApp.java           # Application entry point
 
 --Testing Strategy
